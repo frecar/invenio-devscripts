@@ -1,4 +1,5 @@
 tasks:
+  - sudo apt-get update
   - ./invenio-kickstart maint-1.1 --yes-i-know --yes-i-really-know
   - sudo -u www-data nosetests /opt/invenio/lib/python/invenio/*_unit_tests.py
   - sudo -u www-data nosetests /opt/invenio/lib/python/invenio/*_regression_tests.py
