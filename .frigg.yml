@@ -1,4 +1,6 @@
 tasks:
+  - sudo apt-get install pip
+  - sudo pip install nose
   - sudo apt-get update
   - ./invenio-kickstart maint-1.1 --yes-i-know --yes-i-really-know
   - sudo -u www-data nosetests /opt/invenio/lib/python/invenio/*_unit_tests.py
